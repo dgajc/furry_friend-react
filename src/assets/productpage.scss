@@ -1,0 +1,154 @@
+$brand-01: #f2a09e;
+$brand-02: #e7adac;
+$brand-03: #f3d9d8;
+$gray-01: #1e1e1e;
+$gray-02: #888888;
+$gray-03: #bec2bd;
+$gray-04: #f2f2f2;
+$gray-05: #fafafa;
+$white: #ffffff;
+$red-01:#E53E3E;
+
+
+.nav {
+  width: 100vw;  // 是這段讓他產生x軸，我如果用b5的container-fluid他會變成b5的最大寬大
+  max-width: 100%;  
+  overflow-x: hidden;
+}
+// 路徑
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  font-size: 24px;
+  margin-bottom: 0px;
+  min-width: auto !important;
+  max-width: 100vw !important;
+  flex-wrap: wrap !important;
+  a {
+    color: $gray-05;
+  }
+  .breadcrumb-item.active {
+    color: $gray-01;
+  }
+  li.breadcrumb-item::before {
+    color: $gray-05;
+  }
+}
+
+// 商品圖片
+.main-img {
+  width: 100%;  
+  height: 100%; 
+  object-fit: cover; 
+}
+
+
+@media (min-width: 768px) {
+  .main-img {
+    width: 526px;
+  }
+}
+
+.carousel-thumbnails {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-thumbnail-img {
+  width: auto;
+  height: 107px;
+  object-fit: contain;
+}
+
+// 右側敘述設定
+.product-info {
+  color: $gray-01;
+}
+
+.quantity-container {
+  width: 100%; // 讓整個區塊滿版
+  max-width: 180px; // 可調整最大寬度，防止太寬
+}
+
+.btn-quantity {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 2px solid $gray-01 ;
+  color: $gray-01 ;
+}
+
+.quantity-input {
+  width: 50px !important;
+  text-align: center;
+  border: 1px solid $gray-03;
+  height: 40px;
+}
+
+
+
+
+
+
+.quantity-input {
+  text-align: center;
+}
+
+.product-actions {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .product-info {
+    margin: 55px 68px;
+  }
+}
+// 按鈕設定
+.btn-add-to-cart {
+  border-radius: 8px;
+  background-color: $brand-01;
+  color: $gray-05;
+}
+
+
+.btn:hover {
+  background-color: $brand-02;
+  color: $gray-01;
+}
+.btn-selected {
+  background-color: $brand-02;
+}
+
+.about-product {
+  img {
+    height: 378px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: $gray-04;
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+  vertical-align: top;
+  .content {
+    margin: 15px 0 15px 40px;
+  }
+}
+.title {
+  text-align: left;
+  font-weight: bold;
+  display: block;
+  margin: 12px 0 12px 40px;
+} 

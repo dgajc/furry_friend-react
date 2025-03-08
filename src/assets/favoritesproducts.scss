@@ -1,0 +1,78 @@
+// 讓表格行內內容垂直對齊
+td {
+  vertical-align: middle;
+}
+
+// 讓價格的 div 佔滿表格高度，並且內部文字垂直置中
+.price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// 刪除按鈕推到最右側
+.btn-outline-danger {
+  margin-left: auto;
+  border: none; // 移除紅色邊框
+  background: none;
+  color: #dc3545;
+  padding: 0.3rem 0.6rem; // 讓按鈕更小
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 讓刪除按鈕與價格保持適當間距
+.ms-2 {
+  margin-left: 8px;
+}
+
+// 表格樣式
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+// 表頭加上底線
+thead tr {
+  border-bottom: 2px solid #ddd;
+}
+
+// 只保留 tbody 最後一行的底線
+tbody tr:not(:last-child) {
+  border-bottom: none;
+}
+
+tbody tr:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+// 確保圖片對齊表格內容
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+// 產品超連結樣式（讓文字對齊）
+.product-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+// 調整價格顯示
+.product-origin-price {
+  text-decoration: line-through;
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.product-sale-price {
+  font-weight: bold;
+  color: #e63946;
+}
